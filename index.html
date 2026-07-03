@@ -1,11 +1,210 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cidadania & Segurança Digital</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --accent: #3b82f6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: var(--dark);
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+            scroll-margin-top: 80px;
+        }
+
+        h2 {
+            color: var(--secondary);
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border-top: 4px solid var(--primary);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        .network-badge {
+            display: inline-block;
+            background: #e2e8f0;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-right: 5px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Pricila-AxlRose</h1>
+
+    <header>
+        <h1>Cidadania & Segurança Digital</h1>
+        <p>Navegue com consciência, proteja seus dados e conheça seus direitos na rede.</p>
+    </header>
+
+    <nav>
+        <a href="#cidadania">Cidadania Digital</a>
+        <a href="#direitos">Seus Direitos</a>
+        <a href="#redes">Redes Sociais</a>
+        <a href="#seguranca">Segurança Prática</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="cidadania">
+            <h2>O que é Cidadania Digital?</h2>
+            <p>Ser um cidadão digital significa usar a tecnologia de forma responsável, ética e segura. Assim como na vida real, nossas ações no ambiente virtual têm consequências. Respeitar o próximo, combater o cyberbullying e não compartilhar notícias falsas (fake news) são pilares fundamentais para construir uma internet mais saudável.</p>
+        </section>
+
+        <section id="direitos">
+            <h2>Direitos dos Usuários de Internet</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Proteção de Dados (LGPD)</h3>
+                    <p>Você tem o direito de saber quais dados as plataformas coletam sobre você (como localização, cliques e preferências) e pode exigir a exclusão dessas informações a qualquer momento.</p>
+                </div>
+                <div class="card">
+                    <h3>Privacidade e Liberdade</h3>
+                    <p>O Marco Civil da Internet garante que suas comunicações privadas não sejam violadas sem ordem judicial e protege sua liberdade de expressão dentro dos limites da lei.</p>
+                </div>
+                <div class="card">
+                    <h3>Combate a Abusos</h3>
+                    <p>Em casos de exposição de fotos íntimas ou ofensas graves, os provedores são obrigados a remover o conteúdo rapidamente após a devida notificação para mitigar danos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="redes">
+            <h2>Cuidados nas Redes Sociais</h2>
+            <div class="grid">
+                <div class="card">
+                    <span class="network-badge">Instagram</span>
+                    <span class="network-badge">TikTok</span>
+                    <h3>Exposição e Algoritmo</h3>
+                    <p>Ajuste suas contas para o modo privado se quiser controle total de quem vê suas fotos e vídeos. Lembre-se de que o algoritmo dessas redes foca em manter sua atenção; faça pausas para sua saúde mental.</p>
+                </div>
+                <div class="card">
+                    <span class="network-badge">X (Twitter)</span>
+                    <h3>Privacidade de Conversas</h3>
+                    <p>Use filtros de palavras-chave para evitar conteúdos sensíveis ou ofensivos. Pense duas vezes antes de publicar opiniões impulsivas, pois conteúdos salvos por terceiros podem durar para sempre.</p>
+                </div>
+                <div class="card">
+                    <span class="network-badge">Discord</span>
+                    <h3>Segurança em Servidores</h3>
+                    <p>Cuidado com links recebidos por DM prometendo vantagens (como assinaturas grátis). Desative as mensagens diretas de membros de servidores desconhecidos para evitar assédio ou golpes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="seguranca">
+            <h2>Dicas Essenciais de Segurança</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Autenticação em Dois Fatores (2FA)</h3>
+                    <p>Ative a verificação em duas etapas em todas as suas contas. Mesmo que alguém descubra sua senha, não conseguirá entrar sem o código do seu celular.</p>
+                </div>
+                <div class="card">
+                    <h3>Senhas Fortes</h3>
+                    <p>Evite usar a mesma senha para tudo. Crie combinações usando letras maiúsculas, minúsculas, números e símbolos (ex: @, #, !).</p>
+                </div>
+                <div class="card">
+                    <h3>Cuidado com o Phishing</h3>
+                    <p>Nunca clique em links suspeitos recebidos por e-mail, SMS ou mensagens de desconhecidos que peçam para você atualizar dados bancários ou fazer login emergencial.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Guia de Cidadania Digital. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>
